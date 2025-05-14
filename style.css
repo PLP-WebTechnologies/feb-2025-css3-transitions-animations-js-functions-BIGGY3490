@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 20px auto;
+  transition: transform 0.5s ease;
+}
+
+#box.animate {
+  animation: moveBox 1s forwards;
+}
+
+@keyframes moveBox {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px) rotate(45deg);
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+  color: white;
+}
